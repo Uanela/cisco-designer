@@ -1,4 +1,5 @@
 try {
+  alert("starting");
   const toggleShowSidebar = () => {
     const sidebarContainer = document.querySelector("#sidebar-container");
     sidebarContainer.classList.toggle("show");
@@ -18,7 +19,7 @@ try {
   const isInViewportFull = (el) => {
     let rect;
     try {
-      alert("full");
+      //   alert("full");
       rect = el.getBoundingClientRect();
     } catch (err) {
       alert(err.message);
@@ -89,9 +90,13 @@ try {
   });
 
   // Eventos
+  alert("before all events");
   window.addEventListener("load", run);
+  alert("after load");
   window.addEventListener("resize", run);
+  alert("after resize");
   window.addEventListener("scroll", run);
+  alert("after scrool");
 } catch (err) {
   console.log(err.message);
 }

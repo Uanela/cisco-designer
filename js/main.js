@@ -55,10 +55,13 @@ try {
   }
 
   const fadeInContainers = document.querySelectorAll(".fade-in-container");
-  const slideInContainers = document.querySelectorAll(".slide-in-container");
+  const slideInContainers =
+    document.getElementsByClassName("slide-in-container");
 
   const run = () => {
     alert("entry run");
+    alert(slideInContainers[0]);
+    alert(fadeInContainers[0]);
     fadeInContainers.forEach((container) => {
       alert("before query selector");
       const elements = container.querySelectorAll("& > *");

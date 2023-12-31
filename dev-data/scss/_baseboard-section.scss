@@ -14,6 +14,7 @@ section#baseboard {
   .content {
     white-space: nowrap;
     animation: 20s slide-baseboard infinite linear;
+    overflow-x: hidden;
   }
 
   span {

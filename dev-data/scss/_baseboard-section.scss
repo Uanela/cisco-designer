@@ -3,6 +3,7 @@ section#baseboard {
   background-color: $secondary-color;
   padding-block: 2rem;
   display: flex;
+  overflow-x: hidden;
 
   &:hover {
     .content {

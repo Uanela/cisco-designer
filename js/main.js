@@ -22,35 +22,35 @@ const isInViewportFull = (el) => {
   } catch (err) {
     alert(err.message);
   }
-  return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <=
-      (window.innerHeight + 700 ||
-        document.documentElement.clientHeight + 700) &&
-    rect.right <=
-      (window.innerWidth + 700 || document.documentElement.clientWidth + 700)
-  );
+  //   return (
+  //     rect.top >= 0 &&
+  //     rect.left >= 0 &&
+  //     rect.bottom <=
+  //       (window.innerHeight + 700 ||
+  //         document.documentElement.clientHeight + 700) &&
+  //     rect.right <=
+  //       (window.innerWidth + 700 || document.documentElement.clientWidth + 700)
+  //   );
 };
 
 function isInViewportLeft(el) {
-  var rect = el.getBoundingClientRect();
-  return (
-    rect.top >= 0 &&
-    rect.bottom <=
-      (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
+  //   var rect = el.getBoundingClientRect();
+  //   return (
+  //     rect.top >= 0 &&
+  //     rect.bottom <=
+  //       (window.innerHeight || document.documentElement.clientHeight) &&
+  //     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  //   );
 }
 
 function isInViewportRight(el) {
-  var rect = el.getBoundingClientRect();
-  return (
-    rect.top >= 0 &&
-    rect.bottom <=
-      (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.left <= (window.innerWidth || document.documentElement.clientWidth)
-  );
+  //   var rect = el.getBoundingClientRect();
+  //   return (
+  //     rect.top >= 0 &&
+  //     rect.bottom <=
+  //       (window.innerHeight || document.documentElement.clientHeight) &&
+  //     rect.left <= (window.innerWidth || document.documentElement.clientWidth)
+  //   );
 }
 
 const fadeInContainers = document.querySelectorAll(".fade-in-container");

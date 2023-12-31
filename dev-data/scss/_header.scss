@@ -1,8 +1,9 @@
 header {
-  height: 100vh;
+  min-height: 100vh;
   background-color: lighten($dark-color, 3);
   position: relative;
   overflow-x: hidden;
+  padding-bottom: 2rem;
 
   &::before {
     content: "";
@@ -123,6 +124,7 @@ header {
 
 @media (max-width: 480px) {
   header {
+    padding-top: 8rem;
     .left-side {
       h3 {
         font-size: 1.5rem;
@@ -135,7 +137,7 @@ header {
     .right-side {
       grid-row: 1;
       img {
-        max-width: 250px;
+        max-width: 200px;
         border: 0.2rem solid $secondary-color;
         padding: 0.4rem;
       }

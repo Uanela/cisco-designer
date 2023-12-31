@@ -1110,10 +1110,11 @@ nav {
       font-size: 1.5rem; } }
 
 header {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #00112a;
   position: relative;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  padding-bottom: 2rem; }
   header::before {
     content: "";
     position: absolute;
@@ -1187,16 +1188,18 @@ header {
         max-width: 280px; } }
 
 @media (max-width: 480px) {
-  header .left-side h3 {
-    font-size: 1.5rem; }
-  header .left-side p {
-    line-height: 1.2; }
-  header .right-side {
-    grid-row: 1; }
-    header .right-side img {
-      max-width: 250px;
-      border: 0.2rem solid #cc00ff;
-      padding: 0.4rem; } }
+  header {
+    padding-top: 8rem; }
+    header .left-side h3 {
+      font-size: 1.5rem; }
+    header .left-side p {
+      line-height: 1.2; }
+    header .right-side {
+      grid-row: 1; }
+      header .right-side img {
+        max-width: 200px;
+        border: 0.2rem solid #cc00ff;
+        padding: 0.4rem; } }
 
 section#my-services .services {
   padding-top: 5rem;

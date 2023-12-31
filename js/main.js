@@ -55,6 +55,7 @@ const run = () => {
     const elements = container.querySelectorAll("& > *");
     elements.forEach((item, i) => {
       if (isInViewportFull(item)) {
+        alert("left or right");
         item.style.transitionDuration = (i + 1) * 0.5 + "s";
         item.classList.add("show");
       } else {
@@ -67,6 +68,7 @@ const run = () => {
     const elements = container.querySelectorAll("& > *");
     elements.forEach((item, i) => {
       if (isInViewportLeft(item) || isInViewportRight(item)) {
+        alert("left or right");
         item.style.transitionDuration = (i + 1) * 0.5 + "s";
         item.classList.add("show");
       } else {

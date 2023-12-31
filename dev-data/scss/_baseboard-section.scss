@@ -2,8 +2,6 @@ section#baseboard {
   margin-top: 8rem;
   background-color: $secondary-color;
   padding-block: 2rem;
-  // display: flex;
-  // display: none;
   word-wrap: nowrap;
   overflow-x: hidden;
 
@@ -15,7 +13,7 @@ section#baseboard {
 
   .content {
     white-space: nowrap;
-    animation: 20s slide-baseboard infinite linear;
+    animation: 5s slide-baseboard infinite linear;
   }
 
   span {

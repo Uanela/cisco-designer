@@ -1194,7 +1194,7 @@ header {
   header .right-side {
     grid-row: 1; }
     header .right-side img {
-      max-width: 225px;
+      max-width: 250px;
       border: 0.2rem solid #cc00ff;
       padding: 0.4rem; } }
 
@@ -1603,7 +1603,7 @@ section#baseboard {
     animation-play-state: paused; }
   section#baseboard .content {
     white-space: nowrap;
-    animation: 20s slide-baseboard infinite linear; }
+    animation: 5s slide-baseboard infinite linear; }
   section#baseboard span {
     font-size: 5rem;
     font-weight: bolder; }

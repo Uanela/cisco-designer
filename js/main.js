@@ -16,6 +16,7 @@ document
 
 const isInViewportFull = (el) => {
   const rect = el.getBoundingClientRect();
+  alert("full");
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&
@@ -29,6 +30,7 @@ const isInViewportFull = (el) => {
 
 function isInViewportLeft(el) {
   var rect = el.getBoundingClientRect();
+  alert("left ");
   return (
     rect.top >= 0 &&
     rect.bottom <=
@@ -39,6 +41,7 @@ function isInViewportLeft(el) {
 
 function isInViewportRight(el) {
   var rect = el.getBoundingClientRect();
+  alert("right");
   return (
     rect.top >= 0 &&
     rect.bottom <=

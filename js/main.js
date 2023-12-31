@@ -16,7 +16,6 @@ document
 
 const isInViewportFull = (el) => {
   const rect = el.getBoundingClientRect();
-  alert("full");
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&
@@ -30,7 +29,6 @@ const isInViewportFull = (el) => {
 
 function isInViewportLeft(el) {
   var rect = el.getBoundingClientRect();
-  alert("left ");
   return (
     rect.top >= 0 &&
     rect.bottom <=
@@ -41,7 +39,6 @@ function isInViewportLeft(el) {
 
 function isInViewportRight(el) {
   var rect = el.getBoundingClientRect();
-  alert("right");
   return (
     rect.top >= 0 &&
     rect.bottom <=
@@ -58,7 +55,6 @@ const run = () => {
     const elements = container.querySelectorAll("& > *");
     elements.forEach((item, i) => {
       if (isInViewportFull(item)) {
-        alert("left or right");
         item.style.transitionDuration = (i + 1) * 0.5 + "s";
         item.classList.add("show");
       } else {
@@ -71,7 +67,6 @@ const run = () => {
     const elements = container.querySelectorAll("& > *");
     elements.forEach((item, i) => {
       if (isInViewportLeft(item) || isInViewportRight(item)) {
-        alert("left or right");
         item.style.transitionDuration = (i + 1) * 0.5 + "s";
         item.classList.add("show");
       } else {

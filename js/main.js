@@ -1,5 +1,4 @@
 try {
-  alert("starting");
   const toggleShowSidebar = () => {
     const sidebarContainer = document.querySelector("#sidebar-container");
     sidebarContainer.classList.toggle("show");
@@ -66,6 +65,7 @@ try {
           item.style.transitionDuration = (i + 1) * 0.5 + "s";
           item.classList.add("show");
         } else {
+          alert("remove full");
           item.classList.remove("show");
         }
       });
@@ -78,6 +78,7 @@ try {
           item.style.transitionDuration = (i + 1) * 0.5 + "s";
           item.classList.add("show");
         } else {
+          alert("remove left right");
           item.classList.remove("show");
         }
       });
@@ -90,13 +91,9 @@ try {
   });
 
   // Eventos
-  alert("before all events");
   window.addEventListener("load", run);
-  alert("after load");
   window.addEventListener("resize", run);
-  alert("after resize");
   window.addEventListener("scroll", run);
-  alert("after scrool");
 } catch (err) {
   console.log(err.message);
 }

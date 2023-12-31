@@ -1170,6 +1170,7 @@ header {
 
 @media (max-width: 767px) {
   header {
+    padding-top: 4.5rem;
     text-align: center; }
     header .content {
       grid-template-columns: repeat(1, 1fr);
@@ -1193,7 +1194,7 @@ header {
   header .right-side {
     grid-row: 1; }
     header .right-side img {
-      max-width: 250px;
+      max-width: 225px;
       border: 0.2rem solid #cc00ff;
       padding: 0.4rem; } }
 
@@ -1241,42 +1242,44 @@ section#my-services .services {
     section#my-services .services > div p {
       padding-bottom: 1rem; } }
 
-section#about-me .content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem; }
-  section#about-me .content .left-side > div:nth-child(2) {
-    position: relative; }
-    section#about-me .content .left-side > div:nth-child(2)::after {
-      content: "";
-      position: absolute;
-      width: 15%;
-      height: 2px;
-      background-color: #d3e6ff;
-      top: 8px;
-      left: 0; }
-    section#about-me .content .left-side > div:nth-child(2) p {
-      margin-block: 5rem; }
-    section#about-me .content .left-side > div:nth-child(2) a {
-      max-width: 200px; }
-  section#about-me .content .right-side img {
-    height: 100%;
-    width: 350px;
-    object-fit: cover; }
-  section#about-me .content .right-side > div {
-    height: 100%;
-    position: relative;
-    margin-right: auto;
-    text-align: right; }
-    section#about-me .content .right-side > div::before {
-      content: "";
-      position: absolute;
-      top: -1rem;
-      right: -1rem;
+section#about-me {
+  overflow-x: hidden; }
+  section#about-me .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem; }
+    section#about-me .content .left-side > div:nth-child(2) {
+      position: relative; }
+      section#about-me .content .left-side > div:nth-child(2)::after {
+        content: "";
+        position: absolute;
+        width: 15%;
+        height: 2px;
+        background-color: #d3e6ff;
+        top: 8px;
+        left: 0; }
+      section#about-me .content .left-side > div:nth-child(2) p {
+        margin-block: 5rem; }
+      section#about-me .content .left-side > div:nth-child(2) a {
+        max-width: 200px; }
+    section#about-me .content .right-side img {
+      height: 100%;
       width: 350px;
-      height: 90%;
-      background-color: #06f;
-      z-index: -1; }
+      object-fit: cover; }
+    section#about-me .content .right-side > div {
+      height: 100%;
+      position: relative;
+      margin-right: auto;
+      text-align: right; }
+      section#about-me .content .right-side > div::before {
+        content: "";
+        position: absolute;
+        top: -1rem;
+        right: -1rem;
+        width: 350px;
+        height: 90%;
+        background-color: #06f;
+        z-index: -1; }
 
 @media (max-width: 840px) {
   section#about-me .content {
@@ -1594,7 +1597,8 @@ section#baseboard {
   margin-top: 8rem;
   background-color: #cc00ff;
   padding-block: 2rem;
-  display: flex; }
+  word-wrap: nowrap;
+  overflow-x: hidden; }
   section#baseboard:hover .content {
     animation-play-state: paused; }
   section#baseboard .content {
@@ -1920,25 +1924,27 @@ body {
   font-family: "Quicksand";
   overflow-x: hidden; }
 
-.fade-in-container > * {
-  opacity: 0;
-  transition: all 0.2s 0.1s; }
-  .fade-in-container > *.show {
-    opacity: 1; }
+.fade-in-container {
+  overflow: hidden; }
+  .fade-in-container > * {
+    opacity: 0;
+    transition: all 0.2s 0.1s; }
+    .fade-in-container > *.show {
+      opacity: 1; }
 
-.slide-in-container > * {
-  opacity: 0;
-  transition: all 0.2s 0.1s; }
-  .slide-in-container > *.show {
-    opacity: 1; }
-
-.slide-in-container.from-left > * {
-  transform: translateX(-50vw); }
-  .slide-in-container.from-left > *.show {
-    transform: translateX(0); }
-
-.slide-in-container.from-right > * {
-  transform: translateX(50vw); }
-  .slide-in-container.from-right > *.show {
-    opacity: 1;
-    transform: translateX(0); }
+.slide-in-container {
+  overflow: hidden; }
+  .slide-in-container > * {
+    opacity: 0;
+    transition: all 0.2s 0.1s; }
+    .slide-in-container > *.show {
+      opacity: 1; }
+  .slide-in-container.from-left > * {
+    transform: translateX(-50vw); }
+    .slide-in-container.from-left > *.show {
+      transform: translateX(0); }
+  .slide-in-container.from-right > * {
+    transform: translateX(50vw); }
+    .slide-in-container.from-right > *.show {
+      opacity: 1;
+      transform: translateX(0); }

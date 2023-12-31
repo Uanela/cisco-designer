@@ -94,6 +94,7 @@ header {
 
 @media (max-width: 767px) {
   header {
+    padding-top: 4.5rem;
     text-align: center;
     .content {
       grid-template-columns: repeat(1, 1fr);
@@ -128,14 +129,13 @@ header {
       }
       p {
         line-height: 1.2;
-        // font-size: 0.8rem;
       }
     }
 
     .right-side {
       grid-row: 1;
       img {
-        max-width: 250px;
+        max-width: 225px;
         border: 0.2rem solid $secondary-color;
         padding: 0.4rem;
       }

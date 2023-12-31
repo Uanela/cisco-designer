@@ -34,6 +34,7 @@ body {
 }
 
 .fade-in-container {
+  overflow: hidden;
   & > * {
     opacity: 0;
     transition: all 0.2s 0.1s;
@@ -44,6 +45,7 @@ body {
 }
 
 .slide-in-container {
+  overflow: hidden;
   & > * {
     opacity: 0;
     transition: all 0.2s 0.1s;

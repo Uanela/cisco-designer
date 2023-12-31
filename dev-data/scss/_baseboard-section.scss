@@ -1,0 +1,59 @@
+section#baseboard {
+  margin-top: 8rem;
+  background-color: $secondary-color;
+  padding-block: 2rem;
+  display: flex;
+
+  &:hover {
+    .content {
+      animation-play-state: paused;
+    }
+  }
+
+  .content {
+    white-space: nowrap;
+    animation: 20s slide-baseboard infinite linear;
+  }
+
+  span {
+    font-size: 5rem;
+    font-weight: bolder;
+  }
+}
+
+@keyframes slide-baseboard {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 920px) {
+  section#baseboard {
+    margin-top: 4rem;
+    padding-block: 1.2rem;
+
+    span {
+      font-size: 3.5rem;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  section#baseboard {
+    padding-block: 1rem;
+    span {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  section#baseboard {
+    span {
+      font-size: 1.8rem;
+    }
+  }
+}

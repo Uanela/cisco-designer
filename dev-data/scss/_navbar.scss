@@ -1,0 +1,153 @@
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lighten($dark-color, 7);
+    box-shadow: 0px 0px 10px $dark-color;
+  }
+
+  .logo-link {
+    color: $light-color;
+    display: flex;
+    align-items: center;
+
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+
+    i {
+      font-size: 2rem;
+      color: $dark-color;
+    }
+  }
+
+  ul {
+    display: flex;
+
+    li {
+      padding: 1rem;
+      text-transform: uppercase;
+      font-weight: 500;
+      transition: all 0.2s;
+
+      &:hover {
+        transform: translateY(-4px);
+      }
+    }
+  }
+
+  .sidebar-opener,
+  .menu-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+      font-size: 2rem;
+      color: $dark-color;
+    }
+  }
+
+  .menu-trigger {
+    display: none;
+  }
+}
+
+@media (max-width: 815px) {
+  nav {
+    .container {
+      padding-inline: 0rem;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  nav {
+    .content {
+      box-shadow: unset;
+    }
+
+    ul {
+      transform: rotateX(90deg);
+      transition: all 0.3s;
+      position: absolute;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      padding-top: 22rem;
+      padding-bottom: 1rem;
+      background-color: lighten($dark-color, 7);
+      z-index: -1;
+      box-shadow: 0px 0px 10px $dark-color;
+    }
+
+    .menu-trigger .fa-xmark {
+      display: none;
+    }
+
+    &.show {
+      ul {
+        transform: rotateX(0deg);
+      }
+
+      .menu-trigger .fa-bars {
+        display: none;
+      }
+
+      .menu-trigger .fa-xmark {
+        display: unset;
+        color: $secondary-color;
+      }
+    }
+
+    .sidebar-opener {
+      display: none;
+    }
+
+    .menu-trigger {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    .logo-link {
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+
+    .logo {
+      width: 4rem;
+      height: 4rem;
+      margin-right: 0.5rem;
+
+      i {
+        font-size: 1.5rem;
+      }
+    }
+
+    .menu-trigger {
+      width: 4rem;
+      height: 4rem;
+
+      i {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

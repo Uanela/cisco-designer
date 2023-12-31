@@ -1,0 +1,144 @@
+header {
+  height: 100vh;
+  background-color: lighten($dark-color, 3);
+  position: relative;
+  overflow-x: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 200px;
+    background-color: lighten($dark-color, 10);
+    height: 100%;
+    width: 30%;
+    transform: skewX(-30deg);
+  }
+
+  .container {
+    height: 100%;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    height: 100%;
+    gap: 2rem;
+  }
+
+  .left-side {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    z-index: 1;
+
+    h3 {
+      font-size: 3rem;
+      font-weight: bolder;
+    }
+
+    p {
+      line-height: 1.5;
+      color: $mid-light-color;
+    }
+
+    .buttons {
+      margin-top: 2rem;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .video-btn {
+      &:hover {
+        background-color: transparent;
+        color: $primary-color;
+      }
+    }
+  }
+
+  .right-side {
+    z-index: 1;
+    text-align: right;
+
+    img {
+      border-radius: 50%;
+      border: 0.5rem solid $secondary-color;
+      border-radius: 50%;
+      padding: 0.8rem;
+      max-width: 500px;
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  header {
+    .left-side {
+      .buttons {
+        max-width: 200px;
+        flex-direction: column;
+      }
+
+      h3 {
+        font-size: 2.5rem;
+      }
+    }
+
+    .right-side {
+      img {
+        max-width: 400px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    text-align: center;
+    .content {
+      grid-template-columns: repeat(1, 1fr);
+      place-content: center;
+      justify-items: center;
+    }
+
+    .left-side {
+      .buttons {
+        margin-inline: auto;
+        gap: 1.5rem;
+      }
+      h3 {
+        font-size: 1.8rem;
+      }
+    }
+
+    .right-side {
+      grid-row: 1;
+      img {
+        max-width: 280px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    .left-side {
+      h3 {
+        font-size: 1.5rem;
+      }
+      p {
+        line-height: 1.2;
+        // font-size: 0.8rem;
+      }
+    }
+
+    .right-side {
+      grid-row: 1;
+      img {
+        max-width: 250px;
+        border: 0.2rem solid $secondary-color;
+        padding: 0.4rem;
+      }
+    }
+  }
+}

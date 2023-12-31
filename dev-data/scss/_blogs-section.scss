@@ -1,0 +1,135 @@
+section#blogs {
+  margin-top: 8rem;
+
+  .container > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    a {
+      height: 4rem;
+    }
+  }
+
+  .blogs {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+    .blog {
+      aspect-ratio: 1/1;
+      text-align: center;
+      position: relative;
+      display: flex;
+      align-items: end;
+      padding: 1.5rem;
+
+      & > div {
+        background-color: lighten($dark-color, 10);
+        padding: 1rem 2rem;
+        margin-bottom: -8rem;
+
+        i {
+          color: $secondary-color;
+        }
+
+        .date {
+          margin-top: -3rem;
+          background-color: $primary-color;
+          padding: 1rem;
+          text-align: center;
+        }
+
+        div {
+          margin-block: 1rem;
+        }
+
+        h3 {
+          margin-bottom: 0.5rem;
+        }
+
+        a {
+          color: $secondary-color;
+          font-weight: bold;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      &:nth-child(1) {
+        background: url("/images/blogs/blog-001.jpg") no-repeat center
+          center/cover;
+      }
+      &:nth-child(2) {
+        background: url("/images/blogs/blog-002.jpg") no-repeat center
+          center/cover;
+      }
+      &:nth-child(3) {
+        background: url("/images/blogs/blog-003.jpg") no-repeat center
+          center/cover;
+      }
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  section#blogs {
+    margin-top: 4rem;
+
+    .blogs {
+      gap: 1rem;
+
+      .blog {
+        padding: 1rem;
+
+        & > div {
+          padding: 1rem 1rem;
+          margin-bottom: -10rem;
+
+          .date {
+            padding: 0.5rem;
+          }
+
+          h3 {
+            margin-bottom: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  section#blogs {
+    .container > div:first-child {
+      flex-direction: column;
+      align-items: start;
+
+      a {
+        margin-top: 1rem;
+        height: 3rem;
+        align-self: end;
+      }
+    }
+
+    .blogs {
+      margin-top: 2rem;
+      grid-template-columns: repeat(1, 1fr);
+      max-width: 350px;
+      margin-inline: auto;
+      gap: 3rem;
+
+      .blog {
+        padding: 1rem;
+
+        & > div {
+          padding: 1rem 1rem;
+          margin-bottom: -2rem;
+        }
+      }
+    }
+  }
+}

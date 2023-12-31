@@ -1,0 +1,71 @@
+section#my-services {
+  .services {
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+    & > div {
+      border: 2px solid $mid-dark-color;
+      text-align: center;
+      padding: 1rem;
+
+      div {
+        color: $primary-color;
+        font-size: 3rem;
+        background-color: $dark-color;
+        width: 5rem;
+        margin-inline: auto;
+        margin-top: -3rem;
+      }
+
+      h3 {
+        padding-block: 1.5rem;
+      }
+
+      p {
+        color: $mid-light-color;
+        padding-bottom: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  section#my-services {
+    .container {
+      padding-top: 3rem;
+      padding-bottom: 6rem;
+    }
+    .services {
+      grid-template-columns: repeat(1, 1fr);
+      max-width: 400px;
+      margin-inline: auto;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  section#my-services {
+    .services {
+      & > div {
+        padding: 0.5rem;
+
+        div {
+          font-size: 2rem;
+          width: 3.5rem;
+          margin-top: -2.3rem;
+        }
+
+        h3 {
+          padding-block: 1rem;
+          font-size: 1rem;
+        }
+
+        p {
+          padding-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

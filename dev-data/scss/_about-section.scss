@@ -1,0 +1,98 @@
+section#about-me {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+    .left-side {
+      & > div:nth-child(2) {
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 15%;
+          height: 2px;
+          background-color: $light-color;
+          top: 8px;
+          left: 0;
+        }
+
+        p {
+          margin-block: 5rem;
+        }
+
+        a {
+          max-width: 200px;
+        }
+      }
+    }
+
+    .right-side {
+      img {
+        height: 100%;
+        width: 350px;
+        object-fit: cover;
+      }
+
+      & > div {
+        height: 100%;
+        position: relative;
+        margin-right: auto;
+        text-align: right;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: -1rem;
+          right: -1rem;
+          width: 350px;
+          height: 90%;
+          background-color: $primary-color;
+          z-index: -1;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  section#about-me {
+    .content {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2rem;
+
+      .left-side {
+        & > div:nth-child(2) {
+          padding-left: 4rem;
+          padding-right: 1rem;
+
+          &::after {
+            content: "";
+            position: absolute;
+            width: 6%;
+            height: 2px;
+            background-color: $light-color;
+            top: 8px;
+            left: 0;
+          }
+          p {
+            margin-block: 2rem;
+          }
+        }
+      }
+
+      .right-side {
+        grid-row: 1;
+        & > div {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 480px) {
+}

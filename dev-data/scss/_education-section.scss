@@ -1,0 +1,54 @@
+section#education {
+  margin-top: 6rem;
+  padding-block: 6rem;
+  background-color: lighten($dark-color, 4);
+
+  .educations-container {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+    & > div {
+      margin-bottom: 2rem;
+
+      & > div {
+        border: 2px solid $light-primary-color;
+        color: $light-primary-color;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+        display: inline-block;
+      }
+
+      h3 {
+        font-weight: bolder;
+        font-size: 1.8rem;
+        margin-block: 0.8rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  section#education {
+    margin-top: 4rem;
+    padding-block: 3rem;
+  }
+}
+
+@media (max-width: 700px) {
+  section#education {
+    .educations-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1rem;
+
+      & > div {
+        h3 {
+          font-size: 1.2rem;
+          margin-block: 0.5rem;
+        }
+      }
+    }
+  }
+}

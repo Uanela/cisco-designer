@@ -1,0 +1,161 @@
+section#contact-form {
+  padding-top: 8rem;
+
+  .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+
+    .left-side {
+      p.description {
+        margin-block: 3rem;
+      }
+
+      h2 {
+        span {
+          color: $secondary-color;
+        }
+      }
+
+      & > div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+
+        div {
+          background-color: lighten($dark-color, 10);
+          padding: 2rem;
+          text-align: center;
+          font-weight: bold;
+
+          i {
+            color: $secondary-color;
+            font-size: 3rem;
+          }
+
+          h3 {
+            margin-top: 1rem;
+            font-size: 2rem;
+            font-weight: bolder;
+          }
+        }
+      }
+    }
+
+    .right-side {
+      & > div {
+        height: 100%;
+        background-color: lighten($dark-color, 10);
+        padding: 2.5rem;
+
+        p {
+          margin-block: 2rem;
+          color: $mid-light-color;
+        }
+
+        form {
+          input,
+          textarea {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            background-color: transparent;
+            border: 2px solid $primary-color;
+            outline: none;
+            color: #fff;
+
+            &::placeholder {
+              color: $mid-light-color;
+            }
+          }
+
+          button {
+            padding: 1rem 2rem;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  section#contact-form {
+    padding-top: 4rem;
+
+    .content {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 3rem;
+
+      .left-side {
+        h2 {
+          font-size: 2rem;
+          span {
+            font-size: 4rem;
+          }
+        }
+        & > div {
+          max-width: 500px;
+          margin-inline: auto;
+        }
+        p.description {
+          margin-block: 1.5rem;
+        }
+      }
+
+      .right-side {
+        & > div {
+          max-width: 500px;
+          margin-inline: auto;
+
+          p {
+            margin-block: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  section#contact-form {
+    .content {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2rem;
+
+      .left-side {
+        & > div {
+          gap: 1rem;
+
+          div {
+            padding: 1rem;
+
+            i {
+              font-size: 2.5rem;
+            }
+
+            h3 {
+              font-size: 1.5rem;
+            }
+          }
+        }
+        p.description {
+          margin-block: 1.5rem;
+        }
+      }
+
+      .right-side {
+        & > div {
+          padding: 1rem;
+          h2 {
+            font-size: 1.2rem;
+          }
+          p {
+            margin-block: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

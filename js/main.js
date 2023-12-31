@@ -15,7 +15,13 @@ document
   .addEventListener("click", toggleShowSidebar);
 
 const isInViewportFull = (el) => {
-  const rect = el.getBoundingClientRect();
+  let rect;
+  try {
+    alert("full");
+    rect = el.getBoundingClientRect();
+  } catch (err) {
+    alert(err.message);
+  }
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&

@@ -58,9 +58,13 @@ try {
   const slideInContainers = document.querySelectorAll(".slide-in-container");
 
   const run = () => {
+    alert("entry run");
     fadeInContainers.forEach((container) => {
+      alert("before query selector");
       const elements = container.querySelectorAll("& > *");
+      alert("after query selector");
       elements.forEach((item, i) => {
+        alert("inside foreach full");
         if (isInViewportFull(item)) {
           item.style.transitionDuration = (i + 1) * 0.5 + "s";
           item.classList.add("show");

@@ -9,7 +9,7 @@ section#testimonials {
     margin-top: 5rem;
     gap: 1.5rem;
     white-space: nowrap;
-    animation: 18s slide-testimonials infinite linear;
+    animation: 36s slide-testimonials infinite linear;
     display: inline-block;
 
     &:hover {
@@ -19,8 +19,8 @@ section#testimonials {
     .testimonial {
       border: 2px solid $mid-dark-color;
       padding: 2rem;
-      width: 30%;
-      margin-right: 1%;
+      width: 425px;
+      margin-right: 16px;
       display: inline-block;
 
       .author-image {
@@ -123,9 +123,11 @@ section#testimonials {
   section#testimonials {
     .testimonials {
       .testimonial {
+        width: 370px;
         .author-image {
           img {
             width: 70px;
+            height: 70px;
           }
         }
       }
@@ -137,13 +139,7 @@ section#testimonials {
   section#testimonials {
     .testimonials {
       .testimonial {
-        width: 35%;
-
-        .author-image {
-          img {
-            width: 70px;
-          }
-        }
+        width: 300px;
       }
     }
   }

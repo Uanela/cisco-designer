@@ -1514,15 +1514,15 @@ section#testimonials {
     margin-top: 5rem;
     gap: 1.5rem;
     white-space: nowrap;
-    animation: 18s slide-testimonials infinite linear;
+    animation: 36s slide-testimonials infinite linear;
     display: inline-block; }
     section#testimonials .testimonials:hover {
       animation-play-state: paused; }
     section#testimonials .testimonials .testimonial {
       border: 2px solid #2b3646;
       padding: 2rem;
-      width: 30%;
-      margin-right: 1%;
+      width: 425px;
+      margin-right: 16px;
       display: inline-block; }
       section#testimonials .testimonials .testimonial .author-image {
         text-align: right;
@@ -1584,14 +1584,15 @@ section#testimonials {
             align-self: end; } }
 
 @media (max-width: 780px) {
-  section#testimonials .testimonials .testimonial .author-image img {
-    width: 70px; } }
+  section#testimonials .testimonials .testimonial {
+    width: 370px; }
+    section#testimonials .testimonials .testimonial .author-image img {
+      width: 70px;
+      height: 70px; } }
 
 @media (max-width: 480px) {
   section#testimonials .testimonials .testimonial {
-    width: 35%; }
-    section#testimonials .testimonials .testimonial .author-image img {
-      width: 70px; } }
+    width: 300px; } }
 
 section#baseboard {
   margin-top: 8rem;

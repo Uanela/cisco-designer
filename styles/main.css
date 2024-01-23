@@ -1130,7 +1130,7 @@ header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    height: 100%;
+    height: 100vh;
     gap: 2rem; }
   header .left-side {
     display: flex;

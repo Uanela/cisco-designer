@@ -47,8 +47,10 @@
       </div>
     </nav>
 
+    <div class="modal-overlay"></div>
+
     <section id="sidebar-container">
-      <sidebar id="contact-form-sidebar">
+      <aside id="contact-form-sidebar">
         <div class="nav"
           ><a href="/" class="logo-link">
             <div class="bg-primary-color p-2 w-7 h-7 logo">
@@ -94,7 +96,7 @@
             <button type="submit" class="btn">Enviar mensagem</button>
           </form>
         </div>
-      </sidebar>
+      </aside>
     </section>
 
     <header>
@@ -419,155 +421,322 @@
         </div>
 
         <div class="testimonials">
-          <div class="testimonial">
-            <div class="author-image">
-              <img
-                src="/images/clients/warren-buffet.jpg"
-                loading="lazy"
-                alt="Warren Buffet"
-              />
+          <div>
+            <div class="testimonial">
+              <div class="author-image">
+                <img
+                  src="/images/clients/warren-buffet.jpg"
+                  loading="lazy"
+                  alt="Warren Buffet"
+                />
+              </div>
+              <div>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-stroke"></i>
+              </div>
+              <h3>Warren Buffet</h3>
+              <p>CEO da BerkShire</p>
+              <div class="comment">
+                <p
+                  >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Dolorum, dolor! Dolorum, dolor! Lorem ipsum, dolor sit
+                  amet.</p
+                >
+                <i class="fas fa-quote-right"></i>
+              </div>
             </div>
-            <div>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-stroke"></i>
+            <div class="testimonial">
+              <div class="author-image">
+                <img
+                  src="/images/clients/steve-jobs.jpg"
+                  loading="lazy"
+                  alt="Steve Jobs"
+                />
+              </div>
+              <div>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h3>Steve Jobs</h3>
+              <p>Fundador da Apple</p>
+              <div class="comment">
+                <p
+                  >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Dolorum, dolor! Dolorum, dolor! Lorem ipsum, dolor sit
+                  amet.</p
+                >
+                <i class="fas fa-quote-right"></i>
+              </div>
             </div>
-            <h3>Warren Buffet</h3>
-            <p>CEO da BerkShire</p>
-            <div class="comment">
-              <p
-                >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Dolorum, dolor! Dolorum, dolor! Lorem ipsum, dolor sit amet.</p
-              >
-              <i class="fas fa-quote-right"></i>
+            <div class="testimonial">
+              <div class="author-image">
+                <img
+                  src="/images/clients/bill-gates.jpg"
+                  loading="lazy"
+                  alt="Bill Gates"
+                />
+              </div>
+              <div>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <h3>Bill Gates</h3>
+              <p>Fundador da Microsoft</p>
+              <div class="comment">
+                <p
+                  >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Dolorum, dolor! Dolorum, dolor! Lorem ipsum, dolor sit
+                  amet.</p
+                >
+                <i class="fas fa-quote-right"></i>
+              </div>
             </div>
-          </div>
-          <div class="testimonial">
-            <div class="author-image">
-              <img
-                src="/images/clients/steve-jobs.jpg"
-                loading="lazy"
-                alt="Steve Jobs"
-              />
-            </div>
-            <div>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h3>Steve Jobs</h3>
-            <p>Fundador da Apple</p>
-            <div class="comment">
-              <p
-                >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Dolorum, dolor! Dolorum, dolor! Lorem ipsum, dolor sit amet.</p
-              >
-              <i class="fas fa-quote-right"></i>
-            </div>
-          </div>
-          <div class="testimonial">
-            <div class="author-image">
-              <img
-                src="/images/clients/bill-gates.jpg"
-                loading="lazy"
-                alt="Bill Gates"
-              />
-            </div>
-            <div>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-            </div>
-            <h3>Bill Gates</h3>
-            <p>Fundador da Microsoft</p>
-            <div class="comment">
-              <p
-                >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Dolorum, dolor! Dolorum, dolor! Lorem ipsum, dolor sit amet.</p
-              >
-              <i class="fas fa-quote-right"></i>
-            </div>
-          </div>
 
-          <div class="testimonial">
-            <div class="author-image">
-              <img
-                src="/images/clients/jeff-bezos.jpg"
-                loading="lazy"
-                alt="Jeff Bezos"
-              />
+            <div class="testimonial">
+              <div class="author-image">
+                <img
+                  src="/images/clients/jeff-bezos.jpg"
+                  loading="lazy"
+                  alt="Jeff Bezos"
+                />
+              </div>
+              <div>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-stroke"></i>
+              </div>
+              <h3>Jeff Bezos</h3>
+              <p>CEO da Amazon</p>
+              <div class="comment">
+                <p
+                  >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Dolorum, dolor! Dolorum, dolor! Lorem ipsum, dolor sit
+                  amet.</p
+                >
+                <i class="fas fa-quote-right"></i>
+              </div>
             </div>
-            <div>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-stroke"></i>
+            <div class="testimonial">
+              <div class="author-image">
+                <img
+                  src="/images/clients/mark-zuckerberg.jpg"
+                  loading="lazy"
+                  alt="Mark Zuckerberg"
+                />
+              </div>
+              <div>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h3>Mark Zuckerberg</h3>
+              <p>CEO da Meta</p>
+              <div class="comment">
+                <p
+                  >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Dolorum, dolor! Dolorum, dolor! Lorem ipsum, dolor sit
+                  amet.</p
+                >
+                <i class="fas fa-quote-right"></i>
+              </div>
             </div>
-            <h3>Jeff Bezos</h3>
-            <p>CEO da Amazon</p>
-            <div class="comment">
-              <p
-                >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Dolorum, dolor! Dolorum, dolor! Lorem ipsum, dolor sit amet.</p
-              >
-              <i class="fas fa-quote-right"></i>
+            <div class="testimonial">
+              <div class="author-image">
+                <img
+                  src="/images/clients/elon-musk.jpg"
+                  loading="lazy"
+                  alt="Elon Musk"
+                />
+              </div>
+              <div>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <h3>Elon Musk</h3>
+              <p>Fundador da Tesla</p>
+              <div class="comment">
+                <p
+                  >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Dolorum, dolor! Dolorum, dolor! Lorem ipsum, dolor sit
+                  amet.</p
+                >
+                <i class="fas fa-quote-right"></i>
+              </div>
             </div>
           </div>
-          <div class="testimonial">
-            <div class="author-image">
-              <img
-                src="/images/clients/mark-zuckerberg.jpg"
-                loading="lazy"
-                alt="Mark Zuckerberg"
-              />
+          <div>
+            <div class="testimonial">
+              <div class="author-image">
+                <img
+                  src="/images/clients/warren-buffet.jpg"
+                  loading="lazy"
+                  alt="Warren Buffet"
+                />
+              </div>
+              <div>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-stroke"></i>
+              </div>
+              <h3>Warren Buffet</h3>
+              <p>CEO da BerkShire</p>
+              <div class="comment">
+                <p
+                  >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Dolorum, dolor! Dolorum, dolor! Lorem ipsum, dolor sit
+                  amet.</p
+                >
+                <i class="fas fa-quote-right"></i>
+              </div>
             </div>
-            <div>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
+            <div class="testimonial">
+              <div class="author-image">
+                <img
+                  src="/images/clients/steve-jobs.jpg"
+                  loading="lazy"
+                  alt="Steve Jobs"
+                />
+              </div>
+              <div>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h3>Steve Jobs</h3>
+              <p>Fundador da Apple</p>
+              <div class="comment">
+                <p
+                  >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Dolorum, dolor! Dolorum, dolor! Lorem ipsum, dolor sit
+                  amet.</p
+                >
+                <i class="fas fa-quote-right"></i>
+              </div>
             </div>
-            <h3>Mark Zuckerberg</h3>
-            <p>CEO da Meta</p>
-            <div class="comment">
-              <p
-                >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Dolorum, dolor! Dolorum, dolor! Lorem ipsum, dolor sit amet.</p
-              >
-              <i class="fas fa-quote-right"></i>
+            <div class="testimonial">
+              <div class="author-image">
+                <img
+                  src="/images/clients/bill-gates.jpg"
+                  loading="lazy"
+                  alt="Bill Gates"
+                />
+              </div>
+              <div>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <h3>Bill Gates</h3>
+              <p>Fundador da Microsoft</p>
+              <div class="comment">
+                <p
+                  >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Dolorum, dolor! Dolorum, dolor! Lorem ipsum, dolor sit
+                  amet.</p
+                >
+                <i class="fas fa-quote-right"></i>
+              </div>
             </div>
-          </div>
-          <div class="testimonial">
-            <div class="author-image">
-              <img
-                src="/images/clients/elon-musk.jpg"
-                loading="lazy"
-                alt="Elon Musk"
-              />
+
+            <div class="testimonial">
+              <div class="author-image">
+                <img
+                  src="/images/clients/jeff-bezos.jpg"
+                  loading="lazy"
+                  alt="Jeff Bezos"
+                />
+              </div>
+              <div>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-stroke"></i>
+              </div>
+              <h3>Jeff Bezos</h3>
+              <p>CEO da Amazon</p>
+              <div class="comment">
+                <p
+                  >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Dolorum, dolor! Dolorum, dolor! Lorem ipsum, dolor sit
+                  amet.</p
+                >
+                <i class="fas fa-quote-right"></i>
+              </div>
             </div>
-            <div>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fa-regular fa-star"></i>
+            <div class="testimonial">
+              <div class="author-image">
+                <img
+                  src="/images/clients/mark-zuckerberg.jpg"
+                  loading="lazy"
+                  alt="Mark Zuckerberg"
+                />
+              </div>
+              <div>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h3>Mark Zuckerberg</h3>
+              <p>CEO da Meta</p>
+              <div class="comment">
+                <p
+                  >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Dolorum, dolor! Dolorum, dolor! Lorem ipsum, dolor sit
+                  amet.</p
+                >
+                <i class="fas fa-quote-right"></i>
+              </div>
             </div>
-            <h3>Elon Musk</h3>
-            <p>Fundador da Tesla</p>
-            <div class="comment">
-              <p
-                >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Dolorum, dolor! Dolorum, dolor! Lorem ipsum, dolor sit amet.</p
-              >
-              <i class="fas fa-quote-right"></i>
+            <div class="testimonial">
+              <div class="author-image">
+                <img
+                  src="/images/clients/elon-musk.jpg"
+                  loading="lazy"
+                  alt="Elon Musk"
+                />
+              </div>
+              <div>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <h3>Elon Musk</h3>
+              <p>Fundador da Tesla</p>
+              <div class="comment">
+                <p
+                  >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Dolorum, dolor! Dolorum, dolor! Lorem ipsum, dolor sit
+                  amet.</p
+                >
+                <i class="fas fa-quote-right"></i>
+              </div>
             </div>
           </div>
         </div>
@@ -575,6 +744,20 @@
     </section>
 
     <section id="baseboard">
+      <div class="content">
+        <span>FOTOGRÁFIA # </span>
+        <span>FILM MAKING # </span>
+        <span>PHOTOSHOP # </span>
+        <span>DAVINCI RESOLVE # </span>
+        <span>FIGMA # </span>
+        <span>ADOBEXD # </span>
+        <span>FOTOGRÁFIA # </span>
+        <span>FILM MAKING # </span>
+        <span>PHOTOSHOP # </span>
+        <span>DAVINCI RESOLVE # </span>
+        <span>FIGMA # </span>
+        <span>ADOBEXD # </span>
+      </div>
       <div class="content">
         <span>FOTOGRÁFIA # </span>
         <span>FILM MAKING # </span>

@@ -9,8 +9,11 @@ section#testimonials {
     margin-top: 5rem;
     gap: 1.5rem;
     white-space: nowrap;
-    animation: 36s slide-testimonials infinite linear;
-    display: inline-block;
+
+    & > div {
+      display: inline-block;
+      animation: 36s slide-testimonials infinite linear;
+    }
 
     &:hover {
       animation-play-state: paused;
@@ -47,7 +50,7 @@ section#testimonials {
 
       p {
         color: $mid-light-color;
-        white-space: wrap;
+        // white-space: wrap;
       }
 
       .comment {
@@ -79,7 +82,6 @@ section#testimonials {
 
     .testimonials {
       margin-top: 5rem;
-      gap: 1rem;
 
       .testimonial {
         padding: 1rem;

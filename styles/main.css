@@ -1516,9 +1516,10 @@ section#testimonials {
   section#testimonials .testimonials {
     margin-top: 5rem;
     gap: 1.5rem;
-    white-space: nowrap;
-    animation: 36s slide-testimonials infinite linear;
-    display: inline-block; }
+    white-space: nowrap; }
+    section#testimonials .testimonials > div {
+      display: inline-block;
+      animation: 36s slide-testimonials infinite linear; }
     section#testimonials .testimonials:hover {
       animation-play-state: paused; }
     section#testimonials .testimonials .testimonial {
@@ -1542,8 +1543,7 @@ section#testimonials {
         margin-top: 1rem;
         margin-bottom: 0.25rem; }
       section#testimonials .testimonials .testimonial p {
-        color: #aab5c4;
-        white-space: wrap; }
+        color: #aab5c4; }
       section#testimonials .testimonials .testimonial .comment {
         margin-top: 1rem;
         display: flex;
@@ -1562,8 +1562,7 @@ section#testimonials {
   section#testimonials {
     margin-top: 4rem; }
     section#testimonials .testimonials {
-      margin-top: 5rem;
-      gap: 1rem; }
+      margin-top: 5rem; }
       section#testimonials .testimonials .testimonial {
         padding: 1rem;
         width: 48%;
@@ -1601,13 +1600,13 @@ section#baseboard {
   margin-top: 8rem;
   background-color: #cc00ff;
   padding-block: 2rem;
-  word-wrap: nowrap;
+  white-space: nowrap;
   overflow-x: hidden; }
   section#baseboard:hover .content {
     animation-play-state: paused; }
   section#baseboard .content {
-    white-space: nowrap;
-    animation: 5s slide-baseboard infinite linear; }
+    display: inline-block;
+    animation: 30s slide-baseboard infinite linear; }
   section#baseboard span {
     font-size: 5rem;
     font-weight: bolder; }
@@ -1853,53 +1852,51 @@ footer {
         text-align: center; } }
 
 section#sidebar-container {
+  z-index: 110;
   position: fixed;
+  overflow-y: scroll;
+  height: 100vh;
+  display: none;
+  justify-content: end;
   width: 100%;
-  z-index: 9;
-  height: 100%;
-  display: none; }
+  scrollbar-width: none; }
+  section#sidebar-container::-webkit-scrollbar {
+    display: none; }
   section#sidebar-container.show {
-    display: block; }
-  section#sidebar-container::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    position: absolute;
-    opacity: 0.7; }
-  section#sidebar-container sidebar#contact-form-sidebar {
-    position: absolute;
-    height: 100%;
+    display: flex; }
+  section#sidebar-container aside#contact-form-sidebar {
     background-color: #00112a;
     width: 500px;
-    right: 0; }
-    section#sidebar-container sidebar#contact-form-sidebar .nav {
+    transition: all 0.3s;
+    height: fit-content;
+    min-height: 100%; }
+    section#sidebar-container aside#contact-form-sidebar .nav {
       background-color: #001a3f;
       padding: 1rem;
       display: flex;
       justify-content: space-between; }
-      section#sidebar-container sidebar#contact-form-sidebar .nav .logo-link {
+      section#sidebar-container aside#contact-form-sidebar .nav .logo-link {
         color: #d3e6ff;
         display: flex;
         align-items: center; }
-        section#sidebar-container sidebar#contact-form-sidebar .nav .logo-link h1 {
+        section#sidebar-container aside#contact-form-sidebar .nav .logo-link h1 {
           font-size: 1.2rem; }
-      section#sidebar-container sidebar#contact-form-sidebar .nav .logo {
+      section#sidebar-container aside#contact-form-sidebar .nav .logo {
         display: flex;
         align-items: center;
         justify-content: center;
         margin-right: 0.8rem; }
-        section#sidebar-container sidebar#contact-form-sidebar .nav .logo i {
+        section#sidebar-container aside#contact-form-sidebar .nav .logo i {
           font-size: 1.5rem;
           color: #000b1b; }
-      section#sidebar-container sidebar#contact-form-sidebar .nav .btn {
+      section#sidebar-container aside#contact-form-sidebar .nav .btn {
         border-radius: 50%;
         height: 3rem;
         width: 3rem;
         padding: 0rem;
         font-size: 1.2rem; }
-    section#sidebar-container sidebar#contact-form-sidebar form input,
-    section#sidebar-container sidebar#contact-form-sidebar form textarea {
+    section#sidebar-container aside#contact-form-sidebar form input,
+    section#sidebar-container aside#contact-form-sidebar form textarea {
       display: block;
       width: 100%;
       padding: 1rem;
@@ -1908,10 +1905,10 @@ section#sidebar-container {
       border: 2px solid #06f;
       outline: none;
       color: #fff; }
-      section#sidebar-container sidebar#contact-form-sidebar form input::placeholder,
-      section#sidebar-container sidebar#contact-form-sidebar form textarea::placeholder {
+      section#sidebar-container aside#contact-form-sidebar form input::placeholder,
+      section#sidebar-container aside#contact-form-sidebar form textarea::placeholder {
         color: #aab5c4; }
-    section#sidebar-container sidebar#contact-form-sidebar form button {
+    section#sidebar-container aside#contact-form-sidebar form button {
       padding: 1rem 2rem;
       color: #fff; }
 
@@ -1926,7 +1923,24 @@ html {
 
 body {
   font-family: "Quicksand";
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  position: relative;
+  scrollbar-width: none; }
+  body::-webkit-scrollbar {
+    display: none; }
+  body.show .modal-overlay {
+    display: unset; }
+
+.modal-overlay {
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: black;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  z-index: 9; }
 
 .fade-in-container {
   overflow: hidden; }

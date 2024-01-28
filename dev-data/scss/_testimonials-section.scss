@@ -25,6 +25,7 @@ section#testimonials {
       width: 425px;
       margin-right: 16px;
       display: inline-block;
+      white-space: wrap;
 
       .author-image {
         text-align: right;
@@ -50,7 +51,7 @@ section#testimonials {
 
       p {
         color: $mid-light-color;
-        // white-space: wrap;
+        white-space: wrap;
       }
 
       .comment {

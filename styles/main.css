@@ -1527,8 +1527,7 @@ section#testimonials {
       padding: 2rem;
       width: 425px;
       margin-right: 16px;
-      display: inline-block;
-      white-space: wrap; }
+      display: inline-block; }
       section#testimonials .testimonials .testimonial .author-image {
         text-align: right;
         margin-top: -5rem; }
@@ -1545,7 +1544,7 @@ section#testimonials {
         margin-bottom: 0.25rem; }
       section#testimonials .testimonials .testimonial p {
         color: #aab5c4;
-        white-space: wrap; }
+        white-space: normal; }
       section#testimonials .testimonials .testimonial .comment {
         margin-top: 1rem;
         display: flex;

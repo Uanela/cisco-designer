@@ -1519,7 +1519,8 @@ section#testimonials {
     white-space: nowrap; }
     section#testimonials .testimonials > div {
       display: inline-block;
-      animation: 36s slide-testimonials infinite linear; }
+      animation: 36s slide-testimonials infinite linear;
+      margin-right: 16px; }
     section#testimonials .testimonials:hover {
       animation-play-state: paused; }
     section#testimonials .testimonials .testimonial {

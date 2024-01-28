@@ -13,10 +13,7 @@ section#testimonials {
     & > div {
       display: inline-block;
       animation: 36s slide-testimonials infinite linear;
-
-      &:nth-child(2) {
-        margin-left: 64px;
-      }
+      margin-left: 72px;
     }
 
     &:hover {
